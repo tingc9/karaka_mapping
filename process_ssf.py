@@ -218,7 +218,7 @@ class ssf_sentence(object):
 		sentence_string = "\n".join(sentence_string.split("\n")[1:-1])
 		# remove SSF chunk
 		# BEWARE SSF chunk (normally chunk 0) is removed
-		if "SSF" in sentence_string.split("\n")[1]:
+		if "SSF" in sentence_string.split("\n")[0]:
 			sentence_string = "\n".join(sentence_string.split("\n")[1:-1])
 		# track brackets to separate outer chunks
 		bracket_counter = 0
